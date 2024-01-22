@@ -16,32 +16,44 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="./index.css">
     </head>
 
     <body>
         <div class="container">
-            <div class="mb-3">
-                <label for="" class="form-label">Nhập mảng</label>
-                <input
-                    type="text"
-                    class="form-control"
-                    name=""
-                    id="txt_nhapMang"
-                    aria-describedby="helpId"
-                    placeholder="Nhập mảng"
-                />
+            <h1 class="text-center">Vui lòng nhập từng phần tử vào ô bên dưới</h1>
+            <div>
+                <div class="mb-3">
+                    <label for="txt_nhapMang" class="form-label">Nhập phần tử của mảng</label>
+                    <input
+                        type="text"
+                        class="form-control my-2"
+                        name=""
+                        id="txt_nhapMang"
+                        aria-describedby="helpId"
+                        placeholder="Phần tử"
+                    />
+                    <button class="btn btn-primary" id="btn_nhapMang">Nhập phần tử</button>
+                    <h2 class="text-center">Mảng đã nhập</h2>
+                    <div id="kqMang" class="text-white bg-info p-3 my-2"></div>
+                    <!-- <button class="btn btn-primary" id="btn_xemMang">Xem mảng đã nhập</button> -->
+                </div>    
             </div>
-            <button class="btn btn-primary" id="btn_nhapMang">submit array</button>
-            <button class="btn btn-primary" id="btn_xemMang">spec array</button>
-            <button class="btn btn-primary" id="btn_tongDuong">Tổng số dương</button>
-            <button class="btn btn-primary" id="btn_demSoDuong">Đếm số dương</button>
-            <button class="btn btn-primary" id="btn_soNhoNhat">Số nhỏ nhất</button>
-            <button class="btn btn-primary" id="btn_soDuongNhoNhat">Số dương nhỏ nhất</button>
-            <button class="btn btn-primary" id="btn_soChanCuoiCung">Số chẵn cuối cùng</button>
-            <button class="btn btn-primary" id="btn_tangDan">Tăng dần</button>
-            <button class="btn btn-primary" id="btn_firstPrime">Số nguyên tố đầu tiên</button>
-            <button class="btn btn-primary" id="btn_intergerCount">Đếm số nguyên</button>
-            <button class="btn btn-primary" id="btn_intergerCompare">So sánh âm dương</button>
+            <h2 class="text-center">Bảng hiển thị kết quả</h2>
+            <div id="kq" class="text-white bg-warning p-4 my-2"></div> 
+            <h2 class="text-center">Thanh công cụ</h2>
+            <div class="congCu">
+                <button class="btn btn-primary" id="btn_tongDuong">Tổng số dương</button>
+                <button class="btn btn-primary" id="btn_demSoDuong">Đếm số dương</button>
+                <button class="btn btn-primary" id="btn_soNhoNhat">Số nhỏ nhất</button>
+                <button class="btn btn-primary" id="btn_soDuongNhoNhat">Số dương nhỏ nhất</button>
+                <button class="btn btn-primary" id="btn_soChanCuoiCung">Số chẵn cuối cùng</button>
+                <button class="btn btn-primary" id="btn_tangDan">Tăng dần</button>
+                <button class="btn btn-primary" id="btn_firstPrime">Số nguyên tố đầu tiên</button>
+                <button class="btn btn-primary" id="btn_intergerCount">Đếm số nguyên</button>
+                <button class="btn btn-primary" id="btn_intergerCompare">So sánh âm dương</button>
+            </div>
+            <h2 class="text-center">Đổi chỗ 2 vị trí trong mảng</h2>
             <div class="mb-3">
                 <label for="" class="form-label">Vị trí 1</label>
                 <input
@@ -50,7 +62,7 @@
                     name=""
                     id="txt_1st"
                     aria-describedby="helpId"
-                    placeholder="Nhập vị trí số 1"
+                    placeholder="Nhập vị trí số 1 (theo index)"
                 />
             </div>
             <div class="mb-3">
@@ -61,11 +73,11 @@
                     name=""
                     id="txt_2nd"
                     aria-describedby="helpId"
-                    placeholder="Nhập vị trí số 2"
+                    placeholder="Nhập vị trí số 2 (theo index)"
                 />
             </div>
-            <button class="btn btn-primary" id="btn_swap">swap index</button>
-            <div id="kq" class="text-white bg-warning p-3 my-2"></div>
+            <button class="btn btn-primary" id="btn_swap">Bắt đầu đổi chỗ</button>
+            
         </div>
         
         <!-- Bootstrap JavaScript Libraries -->
